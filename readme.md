@@ -191,12 +191,12 @@ nginx是负载均衡，转发。首页的视频，每个人看到的都是一样
 			controller
 			service
 				impl
-			mapper
-			utils
-			domain
+			mapper 数据访问层
+			utils  工具
+			domain  实体类 数据库
 			config
-			interceoter
-			dto
+			interceoter 拦截器
+			dto 数据传输对象
 		2、application.properties配置文件
 		   配置启动端口
 		   server.port=8082
