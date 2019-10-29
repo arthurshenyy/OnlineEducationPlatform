@@ -1,9 +1,12 @@
 package com.net.lznvideo.video;
 
+import org.apache.ibatis.annotations.Mapper;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@MapperScan("com.net.lznvideo.video.mapper")
 public class VideoApplication {
 
     public static void main(String[] args) {
