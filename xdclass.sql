@@ -118,17 +118,28 @@ CREATE TABLE `video` (
 LOCK TABLES `video` WRITE;
 /*!40000 ALTER TABLE `video` DISABLE KEYS */;
 
-INSERT INTO `video` (`id`, `title`, `summary`, `cover_img`, `view_num`, `price`, `create_time`, `online`, `point`)
-VALUES
-	(1,'SpringBoot+Maven整合Websocket课程','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',12,1000,NULL,0,8.70),
-	(2,'2018年 6.2新版本ELK ElasticSearch ','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',43,500,NULL,0,9.70),
-	(3,'JMeter接口测试入门到实战','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',53,123,NULL,0,8.70),
-	(4,'Spring Boot2.x零基础入门到高级实战','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',23,199,NULL,0,6.20),
-	(5,'亿级流量处理搜索','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',64,10,NULL,0,9.10),
-	(6,'reidis消息队列高级实战','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',12,10,NULL,0,6.70),
-	(7,'谷歌面试题','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',52,23,NULL,0,5.10),
-	(8,'js高级前端视频','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',54,442,NULL,0,8.70),
-	(9,'List消息队列高级实战','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',13,32,NULL,0,4.30);
+-- INSERT INTO `video` (`id`, `title`, `summary`, `cover_img`, `view_num`, `price`, `create_time`, `online`, `point`)
+-- VALUES
+-- 	(1,'SpringBoot+Maven整合Websocket课程','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',12,1000,NULL,0,8.70),
+-- 	(2,'2018年 6.2新版本ELK ElasticSearch ','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',43,500,NULL,0,9.70),
+-- 	(3,'JMeter接口测试入门到实战','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',53,123,NULL,0,8.70),
+-- 	(4,'Spring Boot2.x零基础入门到高级实战','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',23,199,NULL,0,6.20),
+-- 	(5,'亿级流量处理搜索','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',64,10,NULL,0,9.10),
+-- 	(6,'reidis消息队列高级实战','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',12,10,NULL,0,6.70),
+-- 	(7,'谷歌面试题','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',52,23,NULL,0,5.10),
+-- 	(8,'js高级前端视频','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',54,442,NULL,0,8.70),
+-- 	(9,'List消息队列高级实战','这是概要','https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png',13,32,NULL,0,4.30);
+
+INSERT INTO `video` VALUES (1, 'SpringBoot+Maven整合Websocket课程', '这是概要', 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png', 12, 1000, '2019-11-06 18:44:08', 0, 8.70);
+INSERT INTO `video` VALUES (2, '2018年 6.2新版本ELK ElasticSearch ', '这是概要', 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png', 43, 500, '2019-11-06 18:44:08', 0, 9.70);
+INSERT INTO `video` VALUES (3, 'JMeter接口测试入门到实战', '这是概要', 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png', 53, 123, '2019-11-06 18:44:08', 0, 8.70);
+INSERT INTO `video` VALUES (4, 'Spring Boot2.x零基础入门到高级实战', '这是概要', 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png', 23, 199, '2019-11-06 18:44:08', 0, 6.20);
+INSERT INTO `video` VALUES (5, '亿级流量处理搜索', '这是概要', 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png', 64, 10, '2019-11-06 18:44:08', 0, 9.10);
+INSERT INTO `video` VALUES (6, 'reidis消息队列高级实战', '这是概要', 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png', 12, 10, '2019-11-06 18:44:08', 0, 6.70);
+INSERT INTO `video` VALUES (7, '谷歌面试题', '这是概要', 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png', 52, 23, '2019-11-06 18:44:08', 0, 5.10);
+INSERT INTO `video` VALUES (8, 'js高级前端视频', '这是概要', 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png', 54, 442, '2019-11-06 18:44:08', 0, 8.70);
+INSERT INTO `video` VALUES (9, 'List消息队列高级实战', '这是概要', 'https://xd-video-pc-img.oss-cn-beijing.aliyuncs.com/upload/video/video_cover.png', 13, 32, '2019-11-06 18:44:08', 0, 4.30);
+
 
 /*!40000 ALTER TABLE `video` ENABLE KEYS */;
 UNLOCK TABLES;

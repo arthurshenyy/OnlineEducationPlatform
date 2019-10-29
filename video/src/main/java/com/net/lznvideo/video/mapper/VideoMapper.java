@@ -1,8 +1,8 @@
 package com.net.lznvideo.video.mapper;
 
 import com.net.lznvideo.video.domain.Video;
+import com.net.lznvideo.video.provider.VideoProvider;
 import org.apache.ibatis.annotations.*;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -20,7 +20,8 @@ public interface VideoMapper {
     Video findById(int id);
 
 
-    @Update("UPDATE video SET title=#{title} WHERE id =#{id}")
+//    @Update("UPDATE video SET title=#{title} WHERE id =#{id}")
+    @UpdateProvider(type= VideoProvider.class,method="updateVideo")
     int update(Video Video);
 
     @Delete("DELETE FROM video WHERE id =#{id}")
