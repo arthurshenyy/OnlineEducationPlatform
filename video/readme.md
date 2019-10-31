@@ -14,8 +14,10 @@
    方案二：redis集群存储登录token 每次都要访问一次redis 网络开销比较高。
    # 微服务下登录校验解决方案：
    通过加解密算法生成token校验。 
-   
-   
+   zhenninglu0608@gmail.com
+   ## 微信开发
+lzn17824826810@163.com
+65874092Lznzs
    
    
     

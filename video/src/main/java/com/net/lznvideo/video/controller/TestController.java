@@ -1,6 +1,7 @@
 package com.net.lznvideo.video.controller;
 
 import com.net.lznvideo.video.config.WeChatConfig;
+import com.net.lznvideo.video.domain.JsonData;
 import com.net.lznvideo.video.mapper.VideoMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,10 +18,10 @@ public class TestController{
     private WeChatConfig weChatConfig;
 
     @RequestMapping("test_config")
-    public String testConfig() {
+    public JsonData testConfig() {
         System.out.println(weChatConfig.getAppId());
         System.out.println(weChatConfig.getAppsecret());
-        return "hello xdclass.net";
+        return JsonData.buildSuccess(weChatConfig.getAppId());
     }
 
     /**
